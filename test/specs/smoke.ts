@@ -1,13 +1,21 @@
 describe('Smoke test', () => {
-    // it('Check title', () => {
-    //      browser.url('/')
-    //      expect(browser).toHaveTitle('Message. Video. Phone. | RingCentral');
-    //  })
-     
-     it.skip('Find Text', () => {
+    it('Check title', () => {
+         browser.url('/')
+         expect(browser).toHaveTitle('Message. Video. Phone. | RingCentral');
+     })
+        
+    it('Find picture', () => {
         browser.url('/')
-        const findText = $('') 
-        const expectedText = ("")
+        const img = $('.IID-image-219eb8a7 > div:nth-child(2) > img:nth-child(1)')
+        if(!img.isExisting()) {
+            throw new Error('Website should be opened, and logo displayed')
+        }
+    })
+        
+    it('Find Text', () => {
+        browser.url('/')
+        const findText = $('div.cta__wrapper:nth-child(4) > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)') 
+        const expectedText = ("Join a meeting")
         expect(findText).toHaveTextContaining(expectedText);
     })
 
