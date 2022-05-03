@@ -11,7 +11,7 @@ describe('Smoke test', () => {
         }
     })
         
-    it.only('checking assertion', () => {
+    it('checking assertion', () => {
         try {
             assert(false)
         } catch (err) {
