@@ -23,7 +23,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/hometask.ts'
+        // './test/specs/**/hometask.ts'
+        './test/specs/**/hometask2.ts'
         
     ],
     // Patterns to exclude.

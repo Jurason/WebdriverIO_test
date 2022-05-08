@@ -1,5 +1,4 @@
 
-
 const Page = require('./page');
 
 /**

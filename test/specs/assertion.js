@@ -5,6 +5,7 @@ const assert = chai.assert
 
 chai.should();
 
+
 console.time('Time "can register" took')
 describe('Website', function () {
     it('should be alive', function () {

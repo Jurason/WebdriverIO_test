@@ -65,7 +65,6 @@ describe(`parent DESCRIBE block`, function() {
             console.log(`TEST number ${data} executed!`);
         });
     });
-    
 });
 console.log(`${counter.c} - file parsing finished`);
 
