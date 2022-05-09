@@ -1,11 +1,15 @@
 import {Page} from "./page";
 import {ProductDetailsMode} from "../../models/productDetails";
 
+
 export class ProductDetailsPage extends Page {
 
     addToCart() {
+        const currentItemsInCart = this.header.getQuantity()
         $('.product-buttons .button').click()
-        browser.pause(3000)
+        browser.waitUntil(() => {
+            return this.header.getQuantity() > currentItemsInCart
+        })
     }
 
     public getProductName(): string {

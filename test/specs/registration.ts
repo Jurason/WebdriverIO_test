@@ -1,4 +1,4 @@
-import * as assert from "assert";
+// import * as assert from "assert";
 
 describe('User', () => {
     it('can register', () => {
@@ -19,9 +19,12 @@ describe('User', () => {
         // const alert = $('')
         // assert(alert.isDisplayed(), 'Expected success alert to be visible after registration')
         // const alertText = alert.getText()
-        const expectedText = 'some text which should be displayed'
+        // const expectedText = 'some text which should be displayed'
         //assert(alertText === expectedText, 'Alert text: "${alertText}" match to expected text: "${expectedText}" after successful registration')
-        console.log('Alert text: "${expectedText}" match to expected')
+        // console.log('Alert text: "${expectedText}" match to expected')
+
+
+
     })
 })
 

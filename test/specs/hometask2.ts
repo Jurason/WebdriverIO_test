@@ -9,7 +9,18 @@
 import {App} from "../pageobjects/application";
 import {expect} from "chai";
 
+describe('Cart', function() {
+    it('add right quantity', function () {
+        App.product.open('/lindo-4826722170045/p331586443/')
+        App.product.addToCart()
+    })
+})
+
 describe("Order", function() {
+    beforeEach(function (){
+        browser.deleteAllCookies()
+    })
+
     it("is successful for regular item", function () {
         App.product.open('/lindo-4826722170045/p331586443/')
         App.product.addToCart()
